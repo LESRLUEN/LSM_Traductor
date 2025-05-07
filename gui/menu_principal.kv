@@ -1,0 +1,34 @@
+<MenuPrincipal>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 20
+
+        Label:
+            text: "Traductor de Lengua de Señas Mexicana"
+            font_size: '24sp'
+            bold: True
+
+        Button:
+            text: "Lecciones"
+            font_size: '20sp'
+            on_release:
+                # cambiar pantalla a lecciones (aún no implementado)
+
+        Button:
+            text: "Examen"
+            font_size: '20sp'
+            on_release:
+                # cambiar pantalla a examen (aún no implementado)
+
+        Button:
+            text: "Traductor en Vivo"
+            font_size: '20sp'
+            on_release:
+                app.root.current = 'menu'  # temporal, luego cambiará a traductor
+
+        Button:
+            text: "Salir"
+            font_size: '20sp'
+            on_release:
+                app.stop()
